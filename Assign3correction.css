@@ -1,0 +1,121 @@
+.image{
+    width:150px;
+    height:50px;
+    background-color: black;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(9, 9, 82);
+    align-items: center;
+    height: 60px;
+    position: fixed;
+    top:0;
+    width:100%;
+}
+#bar{
+    color:orange;
+}
+ul{
+    list-style-type: none;
+    margin:0px;
+    padding:0px;
+}
+li{
+    display:inline-block;
+    border-right:1px solid white;
+}
+li a{
+    color:white;
+    text-align: center;
+    padding:20px 20px;
+    text-decoration:none;
+}
+li a:hover:not(.active){
+    color:orange;
+}
+.active{
+    background-color:orange;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+hr{
+    border-color:orange;
+}
+.dropdown-content{
+    display:none;
+    position: absolute;
+    background-color:rgb(9, 9, 82);
+    min-width:120px;
+    padding:5px 5px;
+    color: white;
+    border:3px solid orange;
+}
+.dropdown-content a{
+    color:white;
+    text-align: left;
+    padding:20px 20px;
+    text-decoration:none;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.tooltip{
+    position: relative;
+    display: inline-block;
+    border-bottom:1px dotted black;
+}
+.tooltip .tooltiptext{
+    visibility: hidden;
+    width:120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius:6px;
+    padding:6px 0;
+
+    /*Postion the tooltip*/
+    position: absolute;
+    z-index:0;
+}
+.tooltip:hover .tooltiptext{
+    visibility:visible;
+}
+#reflection{
+    width:80px;
+    height:80px;
+    -webkit-box-reflect:right ;
+}
+body{
+    background-image:url(https://images.unsplash.com/photo-1656119651670-ec9610795a3b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.text_color{
+    background-color:aqua;
+    color: black;
+    text-align: center;
+    text-decoration-line:line-through;
+    text-transform: capitalize;
+    text-shadow:2px 2px 5px red;
+}
+p .small{
+    text-indent:50px;
+    letter-spacing:5px;
+    line-height:0.8;
+    word-spacing:50px;
+    white-space:50px;
+}
+p .big{
+    text-indent:50px;
+    letter-spacing:5px;
+    line-height:0.8;
+    word-spacing:50px;
+    white-space:50px;
+}
+.big{
+    font: italic small-caps bold 12px/30px Georgia,serif;
+}
